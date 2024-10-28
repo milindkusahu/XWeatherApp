@@ -1,9 +1,8 @@
 import React from "react";
-import style from "./Card.module.css";
 
 const Card = ({ title, temp }) => {
   return (
-    <div className={style.card}>
+    <div className="weather-cards">
       <h2>{title}</h2>
       <p>{temp}</p>
     </div>
