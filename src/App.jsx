@@ -31,10 +31,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="weather-container">
       <h1>XWeatherApp</h1>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form className="search-form" onSubmit={handleSubmit}>
           <input
             onChange={(e) => {
               setCity(e.target.value);
@@ -47,7 +47,7 @@ const App = () => {
         </form>
       </div>
       {loading ? (
-        <p>Loading data...</p>
+        <p className="loading">Loading data...</p>
       ) : (
         <div className="data-container">
           {cityData.current && (
